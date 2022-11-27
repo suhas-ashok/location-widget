@@ -12,7 +12,16 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 <img width="1054" alt="image" src="https://user-images.githubusercontent.com/32519038/204131789-55e09bda-2ad1-4bec-8c91-4d03a17168ba.png">
 
-<img width="1054" alt="image" src="https://user-images.githubusercontent.com/32519038/204131806-9da4b6b8-1c77-46e5-91b3-6165bc6486fd.png">
+<img width="870" alt="Screenshot 2022-11-27 at 4 31 41 PM" src="https://user-images.githubusercontent.com/32519038/204131843-afe5dae2-d45f-45b2-80d2-04bd5580495d.png">
+
+<img width="660" alt="image" src="https://user-images.githubusercontent.com/32519038/204131854-6667b820-4297-4408-a4e9-7c8205d0616f.png">
+
+<img width="938" alt="image" src="https://user-images.githubusercontent.com/32519038/204131867-d5041924-12c8-4cb6-a3fa-e0a332db895c.png">
+
+<img width="807" alt="image" src="https://user-images.githubusercontent.com/32519038/204131884-93cfd2cf-d42d-4de5-888f-cdea3dea2989.png">
+
+<img width="847" alt="image" src="https://user-images.githubusercontent.com/32519038/204131900-87cbf3ba-0203-4ed8-9e7c-6b81c8202210.png">
+
 
 
 
