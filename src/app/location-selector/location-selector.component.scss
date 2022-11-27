@@ -1,0 +1,71 @@
+.container-box {
+    height: 800px;
+    position: relative;
+}
+
+.horizontal {
+    background-color: #F3F3F3;
+    position: fixed;
+    width: 260px;
+    top: 20%;
+    left: 0.5%;
+    transition: left 0.4s;
+}
+
+.rotated {
+    background-color: #F3F3F3;
+    width: 180px;
+    transition: left 0.4s;
+    position: fixed;
+    top: 40%;
+    left: 0;
+    transform: rotate(-90deg);
+    transform-origin: left top;
+}
+
+.widget-head {
+    width: 95%;
+}
+
+.placeholder-icon {
+    position: absolute;
+    padding-top: 1.4rem;
+}
+
+#myInput {
+    width: 90%;
+    box-shadow: inset 0 .2rem .4rem #c8d0e7;
+    padding-left:2.2rem;
+    border: none;
+}
+  
+#myInput:focus {
+    outline: none;
+}
+
+.dropdown-content {
+    display: grid;
+    grid-template-columns: 90% 1fr;
+    grid-template-rows: 2vh auto;
+    height: auto;
+    grid-gap: 0.4rem;
+    align-items: start;
+}
+
+.dropdown-options {
+    max-height: 400px;
+    grid-column: 1/2 ;
+    grid-row: 2/3;
+    overflow: scroll;
+    border-bottom: 1px solid lightGray;
+}
+
+.filter-buttons {
+    font-size: 0.7rem;
+    cursor: pointer;
+}
+
+.blue-color {
+    color: #1E8AE7;
+}
+  

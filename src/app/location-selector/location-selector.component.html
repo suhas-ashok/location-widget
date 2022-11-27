@@ -1,0 +1,44 @@
+<div class="container-box">
+    <div [ngClass]="{'rotated': !expandWidget, 'horizontal': expandWidget }">
+        <div class="widget-head ps-3 h4">
+            <div class="d-inline-block mt-2">Locations</div>
+            <div class="d-inline-block float-end">
+                <button *ngIf="expandWidget" class="border-0 bg-transparent" (click)="showOptions('content')">
+                    <fa-icon class="blue-color h6" size="xs" [icon]="showContent ? faWindowMinimize: faWindowMaximize">
+                    </fa-icon>
+                </button>
+                <button class="border-0 bg-transparent" [ngClass]="{'mt-1': !expandWidget}"
+                    (click)="showOptions('widget')">
+                    <fa-icon class="blue-color h6" size="xs" [icon]="expandWidget ? faArrowLeft: faArrowDown"></fa-icon>
+                </button>
+            </div>
+        </div>
+        <div *ngIf="expandWidget">
+            <div #options *ngIf="showContent">
+                <div class="text-center">
+                    <fa-icon *ngIf="!cityName.length" class="placeholder-icon ps-3 blue-color" size="sm"
+                        [icon]="faSearch">
+                    </fa-icon>
+                    <input type="search" class="h6 mt-3 py-2" [(ngModel)]="cityName" placeholder="Filter Locations"
+                        id="myInput" (input)="filterCities($event)" />
+                </div>
+                <div class="dropdown-content">
+                    <div class="h6 small blue-color pt-2 ps-3" role="button" (click)="clearSelection()">
+                        <fa-icon size="sm" [icon]="faTimes"></fa-icon><span class="ps-1">Clear All</span>
+                    </div>
+                    <div #options class="mt-3 ps-5 ms-1 form-check dropdown-options">
+                        <label [id]="city.place.replaceAll(' ','')+city.id" *ngFor="let city of cities"
+                            class="form-check-label py-2 cities d-block">
+                            <input type="checkbox" class="form-check-input checkbox" [checked]="city.checked"
+                                (change)="city.checked=$any($event.target).checked; showCities($event.target, city.place);">{{city.place}}
+                        </label>
+                    </div>
+                    <div class="filter-buttons">
+                        <button (click)="filterCities(cityLetter)" class="bg-transparent p-0 d-block border-0"
+                            *ngFor="let cityLetter of cityLetters">{{cityLetter}}</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
