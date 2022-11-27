@@ -9,6 +9,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 5. clicking 'x' button will reset search
 6. while searching, the letters in the right will reduce and contain letters which are beginning letter of cities in the search result 
 7. widget can be closed and minimized, css animation is used to give moving effect
+8. project is updated to angular 15
 
 <img width="1054" alt="image" src="https://user-images.githubusercontent.com/32519038/204131789-55e09bda-2ad1-4bec-8c91-4d03a17168ba.png">
 
